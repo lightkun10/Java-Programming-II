@@ -1,0 +1,8 @@
+===== A Reference Type Variable as a Hash Map Value =====
+Let's take a look at how a spreadsheet works using a library example.
+You can search for books by book title. If a book is found with the
+given search term, the library returns a reference to the book.
+
+Let's begin by creating an example class Book that has its name,
+content and the year of publication as instance variables.
+Take a look at Book class file.

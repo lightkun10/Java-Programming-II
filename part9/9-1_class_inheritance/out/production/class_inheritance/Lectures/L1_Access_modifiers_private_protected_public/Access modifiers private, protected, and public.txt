@@ -1,0 +1,16 @@
+============================================================================
+Access modifiers private, protected, and public
+============================================================================
+
+If a method or variable has the access modifier private, it is visible
+only to the internal methods of that class. Subclasses will not see it,
+and a subclass has no direct means to access it. So, from the Engine
+class there is no way to directly access the variables identifier,
+manufacturer, and description, which are defined in the superclass Part.
+The programmer cannot access the variables of the superclass that have
+been defined with the access modifier private.
+
+A subclass sees everything that is defined with the public modifier
+in the superclass. If we want to define some variables or methods
+that are visible to the subclasses but invisible to everything else,
+we can use the access modifier protected to achieve this.

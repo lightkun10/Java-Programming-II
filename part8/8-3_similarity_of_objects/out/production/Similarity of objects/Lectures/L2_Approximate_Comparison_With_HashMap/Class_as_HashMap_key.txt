@@ -1,0 +1,7 @@
+For a class to be used as a HashMap's key, I need to define for it:
+
+-- Equals method, so that all equal or approximately equal
+   objects cause the comparison to return true and all false
+   for all the rest
+-- hashCode method, so that as few objects as possible end up
+   with the same hash value

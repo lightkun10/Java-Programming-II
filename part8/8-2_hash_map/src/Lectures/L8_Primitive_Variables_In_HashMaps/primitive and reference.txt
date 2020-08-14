@@ -1,0 +1,25 @@
+A hash map's key and the object to be stored are always reference-type variables.
+If you want to use a primitive variable as a key or value, there exists a
+reference-type version for each one. A few have been introduced below.
+
+Primitive	   Reference-type Equivalent
+int	       |       Integer
+double	   |       Double
+char	   |       Character
+
+Java converts primitive variables to reference-types automatically as they are
+added to either a HashMap or an ArrayList. This automatic conversion to a
+reference-type variable is termed auto-boxing in Java, i.e. putting something
+in a box automatically. The automatic conversion is also possible in the other direction.
+
+=================================================================
+int key = 2;
+HashMap<Integer, Integer> hashmap = new HashMap<>();
+hashmap.put(key, 10);
+int value = hashmap.get(key);
+System.out.println(value);
+=================================================================
+Output:
+====
+10
+====
