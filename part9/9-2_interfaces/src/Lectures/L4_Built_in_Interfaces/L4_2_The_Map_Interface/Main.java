@@ -9,6 +9,7 @@ public class Main {
         The Map interface defines the basic behavior associated
         with hash tables. Because the HashMap class implements
         the Map interface, it can also be accessed through the Map interface.
+        https://docs.oracle.com/javase/8/docs/api/java/util/Map.html
         */
         Map<String, String> maps = new HashMap<>();
         maps.put("ganbatte", "good luck");
