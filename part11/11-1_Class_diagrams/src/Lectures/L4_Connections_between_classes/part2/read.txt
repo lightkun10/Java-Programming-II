@@ -1,0 +1,11 @@
+If there is no arrowhead in a connection, both classes know about each other.
+On classdiagram-... file is an example where a book knows about its author
+and a person knows about a book they have written.
+
+As you can see, by default — if there is no star on
+the connection — the connection is singular.
+The classes here are interesting, because a Person can only have one book.
+
+If a person can have multiple books and a book can have multiple authors,
+we add a star to both ends of the connection,
+Please open file "classdiagram-book-person-bidirectional-many-to-many"

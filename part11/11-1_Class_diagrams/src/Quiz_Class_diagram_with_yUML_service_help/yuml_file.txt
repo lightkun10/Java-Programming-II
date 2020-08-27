@@ -1,0 +1,17 @@
+/* https://yuml.me
+Copy-paste code below to the site */
+
+// Teacher class
+[Teacher|-name: String|+toString(): String]
+
+// Class class
+[Class|-teacher: Teacher;-course: String|+printInformation(): void]
+
+// Connection - One Class has Many Teacher
+[Class]<>-*>[Teacher]
+
+// LearningInstitution class
+[LearningInstitution|+addTeacher(teacher: Teacher): void;+toString(): String]
+
+// Connection - One LearningInstitution has Many Teacher
+[LearningInstitution]<>-*>[Teacher]
