@@ -1,0 +1,5 @@
+The classes that represent concepts of the problem domain are often
+placed inside a package called domain. Since the entirety of the
+application is inside the package flightControl,
+let's place the package domain inside the package flightControl.
+Concepts of the problem domain are represented by the classes Place, Airplane, and Flight.
