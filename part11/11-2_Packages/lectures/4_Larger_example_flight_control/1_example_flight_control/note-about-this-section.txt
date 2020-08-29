@@ -1,1 +1,1 @@
-This section is already in exercises section of the same part (part11) as FlightControl.
+This section is already in exercises section of the same part (part11) in FlightControl directory.
