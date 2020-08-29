@@ -1,0 +1,5 @@
+Every project you see in NetBeans is in your computer's file system or on a centralized server.
+
+The project directory src/main/java contains the source code files of the program. If the package of a class is library, that class is stored inside the src/main/java/libary folder of the source code directory. You can also check the concrete project structure in NetBeans in the Files tab, which is normally next to the Project tab. If you cannot see the Files tab, you can make it appear by choosing the option Files from the dropdown menu Window.
+
+Application development is normally done in the Projects tab, where NetBeans hides unimportant files from the programmer.
