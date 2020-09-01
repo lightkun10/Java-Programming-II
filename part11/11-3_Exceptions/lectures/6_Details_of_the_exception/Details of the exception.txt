@@ -1,0 +1,30 @@
+A catch block defines which exception to prepare for with 
+catch (Exception e). The details of the exception are 
+saved to the e variable.
+
+=============================================
+try {
+    // program code which might throw an exception
+} catch (Exception e) {
+    // details of the exception are stored in the variable e
+}
+=============================================
+
+The Exception class has some useful methods. For example 
+printStackTrace() prints the stack trace, which shows how 
+we ended up with an exception. Below is a stack trace 
+printed by the printStackTrace() method.
+
+==============================================
+Exception in thread "main" java.lang.NullPointerException (3)
+at package.Class.print(Class.java:43)	(2)
+at package.Class.main(Class.java:29)	(1)
+==============================================
+
+We read a stack trace from the bottom up. At the bottom 
+is the first call, so the execution of the program has begun 
+from the main() method of the Class class. Line 29 of the 
+main method of the Class class calls the print() method. 
+Line 43 of the print method has thrown a 
+NullPointerException exception. The details of an exception 
+are very useful when trying to pinpoint where an error happens.

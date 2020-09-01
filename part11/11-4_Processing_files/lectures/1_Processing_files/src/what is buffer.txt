@@ -1,0 +1,4 @@
+A buffer flush is the transfer of computer data from a temporary
+storage area to the computer's permanent memory.
+
+Flushing the buffer is the act of transferring the data from the buffer to the file.
