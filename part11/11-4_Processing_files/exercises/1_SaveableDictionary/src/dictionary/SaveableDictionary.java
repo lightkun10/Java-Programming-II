@@ -54,8 +54,7 @@ public class SaveableDictionary {
             this.dictionaries.remove(word);
         }
 
-        // remove by value
-        // https://dzone.com/articles/removing-elements-from-a-map-in-java
+        // Remove by value: https://dzone.com/articles/removing-elements-from-a-map-in-java
         if (this.dictionaries.containsValue(word)) {
             this.dictionaries.values().removeIf(val -> val.equals(word));
         }
@@ -69,7 +68,6 @@ public class SaveableDictionary {
         try (Scanner fileReader = new Scanner(Paths.get(this.file))) {
             while (fileReader.hasNextLine()) {
                 String line = fileReader.nextLine();
-                // System.out.println(line);
                 String[] parts = line.split(":");   // split the line based on the ':' character
 
                 this.dictionaries.put(parts[0], parts[1]);
@@ -81,10 +79,11 @@ public class SaveableDictionary {
         return true;
     }
 
+    // Saves the dictionary to the file given to 
+    // the dictionary as a parameter to the constructor.
     public boolean save() {
         try (FileWriter writer = new FileWriter(this.file)) {
             // Iterate through keys
-            String kd = "";
             for (String key : this.dictionaries.keySet()) {
                 String v2 = this.dictionaries.get(key);
 
@@ -94,7 +93,7 @@ public class SaveableDictionary {
             return false;
         }
 
-        return true;    // CHECK LATER
+        return true;
     }
 
 }
