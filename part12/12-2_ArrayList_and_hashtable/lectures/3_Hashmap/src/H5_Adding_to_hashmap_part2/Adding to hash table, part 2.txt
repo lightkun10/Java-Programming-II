@@ -1,0 +1,7 @@
+The way of adding to a hash table that was described on part 1 works partly.
+The greatest fault in the functionality is that the size of the internal
+array is not increased when the number of values grows too large.
+
+Let's add a growing functionality to the program that doubles the size of the
+internal array of the hash map. The growing operation should also place each value
+in the hash map into the newly created bigger array.

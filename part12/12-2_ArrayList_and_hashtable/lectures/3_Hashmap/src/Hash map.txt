@@ -1,0 +1,10 @@
+Hash map is implemented as an array, in which every element includes a list.
+The lists contain (key, value) pairs. The user can search from the hash map
+based on the key, and they can also add new key-value pairs into it.
+Each key can appear at most once in the hash map.
+
+The functioning of the hash map is based on the hash value of the key. When a
+new (key, value) pair is stored in a hash map, we calculate a hash value based
+on the key to be stored. The hash value decides the index of the internal array
+that will be used for storing. The (key, value) pair is stored in the list that
+can be found at that index.
